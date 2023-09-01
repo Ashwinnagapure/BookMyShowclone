@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="book.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+</head>
+
+<body>
+  <!-- Start of Header -->
+  <header>
+
+    <nav>
+      <!-- Start of NavBar-1 -->
+      <div class="nav">
+        <!-- Navbar logo -->
+        <div class="navlogo">
+          <div class="logo">
+
+          </div>
+
+        </div>
+        <!--  search bar -->
+        <div class="nav-search">
+          <div class="search-icon">
+            <i class="bi bi-search"></i>
+          </div>
+          <input class="search-bar" placeholder="Search for Movies , Events ,Plays,Sports and Activities ">
+        </div>
+        <!-- City Button -->
+        <div class="but1">
+          <div style="border-radius: 0;" class="btn-group ">
+            <p
+              style="color: #cccccc;margin-bottom: 0;font-family: Arial, Helvetica, sans-serif; font-weight: 700;font-size: 0.9rem; margin-top: 10px;">
+              Hyderabad</p>
+            <button
+              style="color: white ; padding-left: 0;padding-right: 0; border: none; margin-left: 5px; padding-top: 0;margin-top: 10px; "
+              type="button" class="btn dropdown-toggle dropdown-toggle-split " data-bs-toggle="dropdown"
+              aria-expanded="false">
+            </button>
+
+            <!-- Drop Down  -->
+            <div style="padding: 10px;" class="dropdown-menu btndrop">
+              <!-- Search bar -->
+              <div class="btnsearchbar">
+                <div class="search-icon2">
+                  <i class="bi bi-search"></i>
+                </div>
+                <input class="btnbar" type="search" placeholder=" Search for your city ">
+              </div>
+              <!-- Cities Template -->
+              <div class="btncity">
+                <p style="text-align: center;font-size: 14px; color: rgb(51, 51, 51);font-weight: 500;">Popular Cities
+                </p>
+                <div class="city">
+                  <div class="cityname">
+                    <a href=""><img src="images/img2.png" alt=""></a>
+                    <p style="text-align: center;">Mumbai</p>
+                  </div>
+                  <div class="cityname">
+                    <a href=""><img src="images/img3.png" alt=""></a>
+                    <p style="text-align: center;">Delhi-NCR</p>
+                  </div>
+                  <div class="cityname">
+                    <a href=""><img src="images/img4.png" alt=""></a>
+                    <p style="text-align: center;">Bengaluru</p>
+                  </div>
+                  <div class="cityname">
+                    <a href=""><img src="images/img5.png" alt=""></a>
+                    <p style="text-align: center;">Hyderabad</p>
+                  </div>
+                  <div class="cityname">
+                    <a href=""><img src="images/img6.png" alt=""></a>
+                    <p style="text-align: center;">Ahmedabad</p>
+                  </div>
+                  <div class="cityname">
+                    <a href=""><img src="images/img7.png" alt=""></a>
+                    <p style="text-align: center;">Chandigarh</p>
+                  </div>
+                  <div class="cityname">
+                    <a href=""><img src="images/img8.png" alt=""></a>
+                    <p style="text-align: center;">Chennai</p>
+                  </div>
+                  <div class="cityname">
+                    <a href=""><img src="images/img9.png" alt=""></a>
+                    <p style="text-align: center;">Pune</p>
+                  </div>
+                  <div class="cityname">
+                    <a href=""><img src="images/img10.png" alt=""></a>
+                    <p style="text-align: center;">Kolkata</p>
+                  </div>
+                </div>
+              </div>
+              <!-- View City Option -->
+              <div class="newcities">
+                <a style="font-size: 14px;font-family: Arial, Helvetica, sans-serif;color: #DC3558;font-weight: 500;text-decoration: none;"
+                  href="">View All Cities</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Sign In Button -->
+        <div class="signinbut">
+          <Button class="but2">Sign in</Button>
+        </div>
+
+        <!-- LogIn Page  -->
+        <!-- <div class="login">
+          
+        </div> -->
+
+        <!--Selection Bar  -->
+
+        <div class="select">
+          <span class="sidebar" onclick="show()">&#9776</span>
+          <!-- Side-Menu -->
+          <div class="sidemenu">
+
+            <div class="s1">
+
+              <p
+                style="font-size: 22px;font-family: Arial, Helvetica, sans-serif;font-weight: 600;color: #ffffff;padding: 15px;margin: 0px;">
+                Hey!</p>
+            </div>
+            <div class="s2">
+              <div class="s21">
+
+              </div>
+              <div class="s22">
+                <p style="font-size: 14px;margin: 0px;color: #3B3E58;font-weight: 500;">Unlocks the special offer &
+                  great benefits</p>
+              </div>
+              <div class="s23">
+                <button style="border-color: #F84464;color: #F84464;font-size: 12px;" type="button"
+                  class="btn btn-outline">Login / Register </button>
+              </div>
+            </div>
+            <hr style="opacity: 0.1;">
+            <div class="s3">
+              <ul>
+                <li>
+                  <i class="bi bi-bell"></i>
+                  <span style="padding-left: 30px;cursor:pointer">Notification</span>
+                </li>
+              </ul>
+            </div>
+            <hr style="opacity: 0.1;">
+            <div class="s3">
+              <ul>
+                <li>
+                  <i class="bi bi-cast"></i>
+                  <span style="padding-left: 30px;cursor:pointer">Stream Library</span>
+                </li>
+              </ul>
+            </div>
+            <hr style="opacity: 0.1;">
+            <div class="s3">
+              <ul>
+                <li>
+                  <i class="bi bi-chat-dots"></i>
+                  <span style="padding-left: 30px;cursor:pointer">Help & Support</span>
+                </li>
+              </ul>
+            </div>
+            <hr style="opacity: 0.1;">
+            <div class="s3">
+              <ul>
+                <li>
+                  <i class="bi bi-gear"></i>
+                  <span style="padding-left: 30px;cursor:pointer">Accounts & Settings</span>
+                </li>
+              </ul>
+            </div>
+            <hr style="opacity: 0.1;">
+            <div class="s3">
+              <ul>
+                <li>
+                  <i class="bi bi-gift"></i>
+                  <span style="padding-left: 30px;cursor:pointer">Rewards</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- End Of NavBar-1 -->
+
+      <!-- Start of NavBar-2 -->
+      <div class="navbar2">
+        <div class="nav2main">
+          <div class="nav2m1">
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 14px; color:#cccccc;font-family:Arial, Helvetica, sans-serif; font-weight:500;padding:0px 10px; ">Movies</span></a>
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 14px; color:#cccccc;font-family:Arial, Helvetica, sans-serif; font-weight:500;padding:0px 10px; ">Stream</span></a>
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 14px; color:#cccccc;font-family:Arial, Helvetica, sans-serif; font-weight:500;padding:0px 10px; ">Events</span></a>
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 14px; color:#cccccc;font-family:Arial, Helvetica, sans-serif; font-weight:500;padding:0px 10px; ">Plays</span></a>
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 14px; color:#cccccc;font-family:Arial, Helvetica, sans-serif; font-weight:500;padding:0px 10px; ">Sports</span></a>
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 14px; color:#cccccc;font-family:Arial, Helvetica, sans-serif; font-weight:500;padding:0px 10px; ">Activities</span></a>
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 14px; color:#cccccc;font-family:Arial, Helvetica, sans-serif; font-weight:500;padding:0px 10px; ">Buzz</span></a>
+            <a href=""><img class="img1" src="images/img12.png" alt=""></a>
+          </div>
+          <div class="nav2m2">
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 12px ; color: #ffffff; padding: 0px 12px;">ListYourShow</span></a>
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 12px ; color: #ffffff; padding: 0px 12px;">Corporates</span></a>
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 12px ; color: #ffffff; padding: 0px 12px;">Offers</span></a>
+            <a style="text-decoration: none;" href=""><span
+                style="font-size: 12px ; color: #ffffff; padding: 0px 12px;">Gift Cards</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!-- End of NavBar-2 -->
+    </nav>
+  </header>
+  <!-- End of the Header -->
+
+  <!-- Start of Corousel -->
+
+  <div class="corousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="images/img13.png" class="d-block w-100  " style="height: 300px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/img14.png" class="d-block w-100  " style="height: 300px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/img15.png" class="d-block w-100  " style="height: 300px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/img16.png" class="d-block w-100  " style="height: 300px;" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span style="background-color: #00000066;color: #ffffff;" class="carousel-control-prev-icon"
+          aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span style="background-color: #00000066;" class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- End Of Corousel -->
+
+  <!-- Start Of Ads Section 1 -->
+  <div class="ads-section1">
+    <div class="ads-image1">
+
+    </div>
+  </div>
+  <!-- End of Ads Section 1 -->
+
+  <!-- Card section 1 -->
+  <div class="card-section1">
+    <div class="cardH1">
+      <p
+        style="font-size: 24px;font-weight: 700;font-family: Arial, Helvetica, sans-serif;line-height: 1.17;color: rgb(51,51,51);">
+        Recommended Movies</p>
+
+      <a style="text-decoration: none;" href=""><span style="font-size: 14px;color: #DC3558;margin-left: 900px;">See All
+          ></span></a>
+    </div>
+
+    <div class="cardH2">
+      <div class="scroll-wrapper">
+        <button style="padding: 0%;" class="scroll-btn prev-btn" onclick="scrollContainer(-1240)">&#60;</button>
+        <div class="scroll-container" id="scrollContainer">
+
+          <div class="scroll-content"></div>
+          <div class="scroll-content"></div>
+          <div class="scroll-content"></div>
+          <div class="scroll-content"></div>
+          <div class="scroll-content"></div>
+          <div class="scroll-content"></div>
+          <div class="scroll-content"></div>
+          <div class="scroll-content"></div>
+          <div class="scroll-content"></div>
+          <div class="scroll-content"></div>
+        </div>
+        <button style="padding: 0%;" class="scroll-btn next-btn" onclick="scrollContainer(1240)">&#62;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- End of Card section 1 -->
+
+  <!-- Start of Ads section 2 -->
+
+  <div class="ads-section2">
+    <div class="ads-image2">
+
+    </div>
+  </div>
+
+  <!-- End of Ads section 2 -->
+
+  <!-- Start of Card Section 2 -->
+
+  <div class="card-section2">
+    <div class="cardH1">
+      <p
+        style="font-size: 24px;font-weight: 700;font-family: Arial, Helvetica, sans-serif;line-height: 1.17;color: rgb(51,51,51);">
+        Recommended Movies</p>
+
+      <a style="text-decoration: none;" href=""><span style="font-size: 14px;color: #DC3558;margin-left: 900px;">See All
+          ></span></a>
+    </div>
+
+    <div class="cardH2">
+      <div class="scroll-wrapper2">
+        <button style="padding: 0%;" class="scroll-btn2 prev-btn2" onclick="scrollContainer2(-1240)">&#60;</button>
+        <div class="scroll-container2" id="scrollContainer2">
+
+          <div class="scroll-content2"></div>
+          <div class="scroll-content2"></div>
+          <div class="scroll-content2"></div>
+          <div class="scroll-content2"></div>
+          <div class="scroll-content2"></div>
+          <div class="scroll-content2"></div>
+          <div class="scroll-content2"></div>
+          <div class="scroll-content2"></div>
+          <div class="scroll-content2"></div>
+          <div class="scroll-content2"></div>
+        </div>
+        <button style="padding: 0%;" class="scroll-btn2 next-btn2" onclick="scrollContainer2(1240)">&#62;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start of Card Section 2 -->
+
+
+  <!--Start Diff Section -->
+
+  <div class="diff1">
+    <div class="diffimg1">
+
+    </div>
+  </div>
+
+  <div class="diff2">
+
+    <div class="card-section3">
+      <div class="cardH13">
+        <p
+          style="font-size: 24px;font-weight: 700;font-family: Arial, Helvetica, sans-serif;line-height: 1.17;color: #ffffff;margin-bottom: 0;margin-left: 40px;">
+          Premieres</p>
+        <span
+          style="font-size: 14px;color: rgb(255,255,255);line-height: 1.43;margin-bottom: 5px;margin-left: 40px;">Brand
+          new releases every friday</span>
+      </div>
+
+      <div class="cardH23">
+        <div class="scroll-wrapper3">
+          <button style="padding: 0%;" class="scroll-btn3 prev-btn3" onclick="scrollContainer3(-1240)">&#60;</button>
+          <div class="scroll-container3" id="scrollContainer3">
+
+            <div class="scroll-content3"></div>
+            <div class="scroll-content3"></div>
+            <div class="scroll-content3"></div>
+            <div class="scroll-content3"></div>
+            <div class="scroll-content3"></div>
+            <div class="scroll-content3"></div>
+            <div class="scroll-content3"></div>
+            <div class="scroll-content3"></div>
+            <div class="scroll-content3"></div>
+            <div class="scroll-content3"></div>
+          </div>
+          <button style="padding: 0%;" class="scroll-btn3 next-btn3" onclick="scrollContainer3(1240)">&#62;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Of Diff section -->
+
+  <!-- Start of Last Section -->
+
+  <div class="Lsmain">
+    <div class="lssub">
+      <div class="lsp">
+        <p style="font-size: 24px;color: #333333;font-family: Arial, Helvetica, sans-serif;font-weight: 700;">Trending
+          Searches Right Now</p>
+      </div>
+      <div class="lsbox1">
+        <div class="box1">
+          <a class="lspa1" href="">
+            <div class="ls1">
+              <p class="lsp1">Jawan</p>
+              <p class="lsp12">Movies</p>
+            </div>
+          </a>
+        </div>
+        <div class="box2">
+          <a class="lspa2" href="">
+            <div class="ls2">
+              <p class="lsp2">Dream Girl 2</p>
+              <p class="lsp22">Movies</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="box3">
+          <a class="lspa3" href="">
+            <div class="ls3">
+              <p class="lsp3">Gadar 2: The Katha Continue</p>
+              <p class="lsp32">Movies</p>
+            </div>
+          </a>
+        </div>
+        <div class="box4">
+          <a class="lspa4" href="">
+            <div class="ls4">
+              <p class="lsp4">Jailer</p>
+              <p class="lsp42">Movies</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="box5">
+          <a class="lspa5" href="">
+            <div class="ls5">
+              <p class="lsp5">OMG 2</p>
+              <p class="lsp52">Movies</p>
+            </div>
+          </a>
+        </div>
+        <div class="box6">
+          <a class="lspa6" href="">
+            <div class="ls6">
+              <p class="lsp6">Oppenheimer</p>
+              <p class="lsp62">Movies</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <div class="lsbox1">
+        <div class="box1">
+          <a class="lspa1" href="">
+            <div class="ls1">
+              <p class="lsp1">Mastaney</p>
+              <p class="lsp12">Movies</p>
+            </div>
+          </a>
+        </div>
+        <div class="box2">
+          <a class="lspa2" href="">
+            <div class="ls2">
+              <p class="lsp2">The Nun ii</p>
+              <p class="lsp22">Movies</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="box3">
+          <a class="lspa3" href="">
+            <div class="ls3sub">
+              <p class="lsp3">Rocky Aur Rani Kii Prem Kahani</p>
+              <p class="lsp32">Movies</p>
+            </div>
+          </a>
+        </div>
+        <div class="box4">
+          <a class="lspa4" href="">
+            <div class="ls4">
+              <p class="lsp4">Lollapalooza India 2024</p>
+              <p class="lsp42">Events</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- End OF Last Section -->
+
+  <!-- Start Home Button -->
+
+  <div style="background-color: #F5F5F5;height: 30px;"></div>
+  <div class="hbmain">
+    <div class="hbsub">
+      <a style="text-decoration: none;" href="book.htm"><span
+          style="font-size: 12px;color: #AAABAC;font-weight: 400;">Home</span></a>
+    </div>
+  </div>
+  <div style="background-color: #F5F5F5;height: 30px;"></div>
+
+  <!-- End of Home Button -->
+
+  <!-- Start Of Footer Section -->
+
+  <footer>
+    <!-- Footer Section 1 -->
+    <div class="footer-section1">
+      <div class="footer-sub1">
+        <div class="hut">
+          <img src="images/hut.svg" style="height: 30px;width: 30px;margin-bottom: 10px;" alt="">
+        </div>
+        <div class="t1">
+          <span style="font-size: 16px;font-weight: 600;font-family: Arial, Helvetica, sans-serif;color: #ffffff;">List
+            your Show</span>
+        </div>
+        <div class="t2">
+          <span style="font-size: 16px;font-weight: 400;font-family: Arial, Helvetica, sans-serif;color: #ffffff;">Got a
+            show, event, activity or a great experience? Partner with us & get listed on BookMyShow</span>
+        </div>
+        <div class="t3">
+          <button
+            style="background-color: #EC5E71;color: #ffffff;font-size: 16px;font-family: Arial, Helvetica, sans-serif; padding: 10px 20px;outline: none;border: none;border-radius: 5px;"><span>Contact
+              today!</span></button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer section 2 -->
+    <div class="footer-section2">
+      <div class="footer-sub2">
+        <div class="i1">
+          <a href=""><img style="height: 85px;" src="images/foot1.png" alt=""></a>
+        </div>
+        <div class="i2">
+          <a href=""><img style="height: 85px;" src="images/foot2.png" alt=""></a>
+        </div>
+        <div class="i3">
+          <a href=""><img style="height: 85px;" src="images/foot3.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer section 3 -->
+    <div class="footer-section3">
+      <div class="footer-sub3">
+        <div style="padding: 0px 0px 10px;" class="o1">
+          <span style="color: #A5A5A5;font-size: 12px;">ICC CRICKET WORLD CUP 2023</span>
+        </div>
+        <div class="o2main">
+          <div class="o2sub">
+            <a class="oa" href="">ICC Men's Cricket World Cup</a>
+            <a class="oa" href="">India Cricket Matches</a>
+            <a class="oa" href="">Afghanistan Cricket Matches</a>
+            <a class="oa" href="">Australia Cricket Matches</a>
+            <a class="oa" href="">Bangladesh Cricket Matches</a>
+            <a class="oa" href="">England Cricket Matches</a>
+            <a class="oa" href="">Netherland Cricket Matches</a>
+            <a class="oa" href="">New Zealand Cricket Matches</a>
+            <a class="oa" href="">Pakistan Cricket Matches</a>
+            <a class="oa" href="">South Africa Cricket Matches</a>
+            <a class="oa" href="">Sri Lanks Cricket Matches</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="footer-sub3">
+        <div style="padding: 0px 0px 10px;" class="o1">
+          <span style="color: #A5A5A5;font-size: 12px;">MOVIES BY GENRE</span>
+        </div>
+        <div class="o2main">
+          <div class="o2sub">
+            <a class="oa" href="">Drama Movies</a>
+            <a class="oa" href="">Action Movies</a>
+            <a class="oa" href="">Adventure Movies</a>
+            <a class="oa" href="">Thriller Movies</a>
+            <a class="oa" href="">Commedy Movies</a>
+            <a class="oa" href="">Animation Movies</a>
+            <a class="oa" href="">Romantic Movies</a>
+            <a class="oa" href="">Crime Movies</a>
+            <a class="oa" href="">Horror Movies</a>
+            <a class="oa" href="">Fantasy Movies</a>
+            <a class="oa" href="">Sci-Fi Movies</a>
+            <a class="oa" href="">Adaptation Movies</a>
+            <a class="oa" href="">Mythological Movies</a>
+            <a class="oa" href="">Noir Movies</a>
+            <a class="oa" href="">Political Movies</a>
+            <a class="oa" href="">Supernatural Movies</a>
+            <a class="oa" href="">Sports Movies</a>
+            <a class="oa" href="">Heist Movies</a>
+            <a class="oa" href="">Historical Movies</a>
+            <a class="oa" href="">Tragedy Movies</a>
+            <a class="oa" href="">Anime Movies</a>
+            <a class="oa" href="">Mystery Movies</a>
+            <a class="oa" href="">War Movies</a>
+            <a class="oa" href="">Classic Movies</a>
+            <a class="oa" href="">Musical Movies</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sub3">
+        <div style="padding: 0px 0px 10px;" class="o1">
+          <span style="color: #A5A5A5;font-size: 12px;">MOVIE UPDATES AND CELEBRITIES</span>
+        </div>
+        <div class="o2main">
+          <div class="o2sub">
+            <a class="oa" href="">Upcoming Movies</a>
+            <a class="oa" href="">Movies Now Showing </a>
+            <a class="oa" href="">Movie Celebrities</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sub3">
+        <div style="padding: 0px 0px 10px;" class="o1">
+          <span style="color: #A5A5A5;font-size: 12px;">MOVIE REVIEWS AND TRENDING ARTICLES</span>
+        </div>
+        <div class="o2main">
+          <div class="o2sub">
+            <a class="oa" href="">Trending Articles</a>
+            <a class="oa" href="">Latest News on Movies, Events, Plays and Sports </a>
+            <a class="oa" href="">Movie Celebrities</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sub3">
+        <div style="padding: 0px 0px 10px;" class="o1">
+          <span style="color: #A5A5A5;font-size: 12px;">CINEMAS IN TOP CITIES</span>
+        </div>
+        <div class="o2main">
+          <div class="o2sub">
+            <a class="oa" href="">Cinemas in Mumbai</a>
+            <a class="oa" href="">Cinemas in Delhi-NCR</a>
+            <a class="oa" href="">Cinemas in Chennai</a>
+            <a class="oa" href="">Cinemas in Bengaluru</a>
+            <a class="oa" href="">Cinemas in Hyderabad</a>
+            <a class="oa" href="">Cinemas in Pune</a>
+            <a class="oa" href="">Cinemas in Ahmedabad</a>
+            <a class="oa" href="">Cinemas in Kolkata</a>
+            <a class="oa" href="">Cinemas in Kochi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section 4 -->
+    <div class="footer-section4">
+      <div class="footer-sub41">
+        <div class="line1">
+
+        </div>
+        <div class="footlogo">
+
+        </div>
+        <div class="line2">
+
+        </div>
+      </div>
+      <div class="footer-sub42">
+        <a href="">
+          <div class="x1">
+            <i class="bi bi-facebook"></i>
+          </div>
+        </a>
+        <a href="">
+          <div class="x1">
+            <i class="bi bi-twitter"></i>
+          </div>
+        </a>
+        <a href="">
+          <div class="x1">
+            <i class="bi bi-instagram"></i>
+          </div>
+        </a>
+        <a href="">
+          <div class="x1">
+            <i class="bi bi-youtube"></i>
+          </div>
+        </a>
+        <a href="">
+          <div class="x1">
+            <i class="bi bi-linkedin"></i>
+          </div>
+        </a>
+      </div>
+      <div class="footer-sub43">
+        <p class="p43"> Copyright 2023 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.</p>
+
+
+        <p class="p43"> The content and images used on this dite are copyright protected and copyrights vests with the
+          respective
+          owners. The usage of the content and images on the website is intended to promote the works and no endorsement
+          of the artist shall be implied. Unauthorized use is prohibited and</p>
+        <p class="p43"> punishable by law.</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- End Of Footer Section -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="book.js"></script>
+</body>
+
+</html>
