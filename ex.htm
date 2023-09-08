@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            margin: 0; /* Remove default body margin */
+        }
+
+        .collapsible {
+            width: 268px;
+            background-color: #ffffff;
+            color: #333333;
+            height: 20px;
+            padding: 25px;
+            cursor: pointer;
+            outline: none;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+           margin-bottom: 15px;
+        }
+
+        .arrow {
+            font-size: 16px;
+            margin-right: 8px;
+        }
+
+        .down-arrow::before {
+            content: '\25BC';
+        }
+
+        .up-arrow::before {
+            content: '\25B2';
+        }
+        .arrow::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            position: relative;
+            top: 3px; /* Adjust this value to align the arrow properly */
+        }
+
+        .up-arrow::before {
+            border-width: 0 4px 6px 4px;
+            border-color: transparent transparent #333333 transparent; /* Adjust the color as needed */
+        }
+
+        .down-arrow::before {
+            border-width: 6px 4px 0 4px;
+            border-color: #333333 transparent transparent transparent; 
+        }
+        /* CSS */
+.hidden {
+  display: none;
+}
+
+
+        .content {
+            display: none;
+            width: 235px;
+            background-color: #ffffff;
+            padding: 16px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            margin-top: -5px; /* Add negative top margin to close the gap */
+            margin-bottom: 10px;
+        }
+
+        .language-button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .language-button {
+            flex: 0 0 calc(50% - 8px);
+            background-color: transparent;
+            color: rgb(220, 53, 75);
+            cursor: pointer;
+            font-size: 14px;
+            padding: 8px 16px;
+            margin-bottom: 8px;
+            border: 1px solid rgb(229, 229, 229);
+        }
+
+        .language-button:hover {
+            color: rgb(220, 53, 75);
+        }
+
+        .collapsible.clicked {
+            color: rgb(220, 53, 75);
+            border-bottom-left-radius: 0%;
+            border-bottom-right-radius: 0%;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <button class="collapsible" id="collapsibleButton1">
+        <span class="arrow up-arrow"></span>
+        Language 1
+    </button>
+    <div class="content" id="content1">
+        <div class="language-button-container">
+            <button class="language-button">English</button>
+            <button class="language-button">Hindi</button>
+            <button class="language-button">Marathi</button>
+            <button class="language-button">Tamil</button>
+            <button class="language-button">Telugu</button>
+            <button class="language-button">Malayalam</button>
+            <button class="language-button">Punjabi</button>
+        </div>
+    </div>
+
+    <button class="collapsible" id="collapsibleButton2">
+        <span class="arrow up-arrow"></span>
+        Language 2
+    </button>
+    <div class="content" id="content2">
+        <div class="language-button-container">
+            <button class="language-button">Option 1</button>
+            <button class="language-button">Option 2</button>
+            <button class="language-button">Option 3</button>
+        </div>
+    </div>
+
+    <button class="collapsible" id="collapsibleButton3">
+        <span class="arrow up-arrow"></span>
+        Language 3
+    </button>
+    <div class="content" id="content3">
+        <div class="language-button-container">
+            <button class="language-button">Item A</button>
+            <button class="language-button">Item B</button>
+            <button class="language-button">Item C</button>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+<div id="loginForm" class="hidden">
+  <form action="login.php" method="post">
+    <!-- Your login form fields go here -->
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Log In</button>
+  </form>
+</div>
+<!-- Sign In Button -->
+<div class="signinbut">
+  <button id="signInButton" class="but2">Sign In</button>
+</div>
+
+
+
+    <script>
+        function toggleCollapsible(buttonId, contentId) {
+            const button = document.getElementById(buttonId);
+            const content = document.getElementById(contentId);
+
+            button.addEventListener("click", function() {
+                content.style.display = content.style.display === "block" ? "none" : "block";
+                button.querySelector(".arrow").classList.toggle("down-arrow");
+                button.querySelector(".arrow").classList.toggle("up-arrow");
+
+                button.classList.toggle("clicked");
+            });
+        }
+
+        // Attach the toggle functionality to each collapsible button
+        toggleCollapsible("collapsibleButton1", "content1");
+        toggleCollapsible("collapsibleButton2", "content2");
+        toggleCollapsible("collapsibleButton3", "content3");
+        // JavaScript
+document.addEventListener('DOMContentLoaded', function () {
+  const signInButton = document.getElementById('signInButton');
+  const loginForm = document.getElementById('loginForm');
+
+  // Add a click event listener to the "Sign In" button
+  signInButton.addEventListener('click', function () {
+    // Toggle the visibility of the login form
+    if (loginForm.style.display === 'none' || loginForm.style.display === '') {
+      loginForm.style.display = 'block';
+    } else {
+      loginForm.style.display = 'none';
+    }
+  });
+});
+
+    </script>
+</body>
+</html>

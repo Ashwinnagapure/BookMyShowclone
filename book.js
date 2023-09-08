@@ -81,3 +81,18 @@ function toggleSideMenu() {
 
 
   
+  const signInButton = document.getElementById('signInButton');
+
+  // Add a click event listener to the button
+  signInButton.addEventListener('click', function() {
+    // Redirect the user to the login page
+    window.location.href = 'login.htm';
+  });
+
+  $(document).ready(function() {
+    // Add a click event listener to the "Sign In" button
+    $("#signInButton").click(function() {
+      // Load the content of login.htm into the loginmain div
+      $("#loginmain").load("login.htm #loginmain");
+    });
+  });
